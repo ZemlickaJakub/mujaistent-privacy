@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Podmínky služby — MůjAsistent</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap');
+
+  :root {
+    --ink: #1a1a2e;
+    --accent: #4f46e5;
+    --accent-light: #eef2ff;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+    --bg: #fafafa;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.8;
+    font-size: 16px;
+  }
+
+  header {
+    background: var(--ink);
+    color: white;
+    padding: 48px 0 40px;
+    text-align: center;
+  }
+
+  header .logo {
+    font-family: 'DM Serif Display', serif;
+    font-size: 28px;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+  }
+
+  header .logo span { color: #818cf8; }
+
+  header p {
+    font-size: 14px;
+    color: #9ca3af;
+    font-weight: 300;
+  }
+
+  .container {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .meta {
+    display: flex;
+    gap: 24px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--muted);
+    flex-wrap: wrap;
+  }
+
+  .meta span { display: flex; align-items: center; gap: 6px; }
+
+  .toc {
+    background: var(--accent-light);
+    border-left: 3px solid var(--accent);
+    padding: 24px 28px;
+    margin: 40px 0;
+    border-radius: 0 8px 8px 0;
+  }
+
+  .toc h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: var(--accent);
+  }
+
+  .toc ol {
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  .toc a { color: var(--accent); text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+
+  section {
+    padding: 40px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  section:last-of-type { border-bottom: none; }
+
+  h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: var(--ink);
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  h2 .num {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--accent);
+    background: var(--accent-light);
+    padding: 2px 8px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+  }
+
+  h3 {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 24px 0 8px;
+    color: var(--ink);
+  }
+
+  p { margin-bottom: 14px; color: #374151; }
+
+  ul, ol {
+    padding-left: 20px;
+    margin-bottom: 14px;
+    color: #374151;
+  }
+
+  li { margin-bottom: 6px; }
+
+  .highlight {
+    background: #fef9c3;
+    border: 1px solid #fde68a;
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    font-size: 14px;
+  }
+
+  .highlight strong { color: #92400e; }
+
+  .contact-box {
+    background: var(--ink);
+    color: white;
+    padding: 32px;
+    border-radius: 12px;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .contact-box h3 { color: white; margin: 0 0 8px; font-size: 18px; }
+  .contact-box p { color: #9ca3af; margin: 0; font-size: 14px; }
+  .contact-box a { color: #818cf8; }
+
+  footer {
+    text-align: center;
+    padding: 32px;
+    font-size: 13px;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+    margin-top: 40px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Můj<span>Asistent</span></div>
+  <p>AI asistent pro váš byznys</p>
+</header>
+
+<div class="container">
+
+  <div class="meta">
+    <span>📄 Podmínky služby</span>
+    <span>📅 Platné od: 1. dubna 2026</span>
+    <span>✏️ Verze 1.0</span>
+  </div>
+
+  <div class="toc">
+    <h2>Obsah</h2>
+    <ol>
+      <li><a href="#provozovatel">Provozovatel služby</a></li>
+      <li><a href="#sluzba">Co je MůjAsistent</a></li>
+      <li><a href="#obsah">Odpovědnost za obsah</a></li>
+      <li><a href="#cena">Cena a fakturace</a></li>
+      <li><a href="#ukonceni">Ukončení smlouvy</a></li>
+      <li><a href="#gdpr">Zpracování osobních údajů (GDPR)</a></li>
+      <li><a href="#omezeni">Omezení odpovědnosti</a></li>
+      <li><a href="#zmeny">Změny podmínek</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ol>
+  </div>
+
+  <section id="provozovatel">
+    <h2><span class="num">01</span> Provozovatel služby</h2>
+    <p>Službu MůjAsistent provozuje:</p>
+    <p>
+      <strong>Jakub Žemlička</strong><br>
+      IČO: 22059644<br>
+      Sídlo: Dlážděná 1491/3, Praha — Nové Město, 110 00<br>
+      E-mail: zemlicka.jakub@gmail.com
+    </p>
+  </section>
+
+  <section id="sluzba">
+    <h2><span class="num">02</span> Co je MůjAsistent</h2>
+    <p>MůjAsistent je platforma poskytující zákazníkovi dedikovaného AI agenta přizpůsobeného jeho byznysu. Agent pomáhá s každodenními úkoly dle aktuální nabídky služeb a sjednaného tarifu — například s tvorbou obsahu, marketingem na sociálních médiích, komunikací se zákazníky a dalšími oblastmi.</p>
+    <p>Konkrétní funkce a možnosti agenta jsou uvedeny v aktuální nabídce služeb. Provozovatel si vyhrazuje právo nabídku rozšiřovat a upravovat.</p>
+
+    <h3>Co služba nezahrnuje</h3>
+    <ul>
+      <li>Garanci obchodních výsledků (počet sledujících, dosah příspěvků, noví zákazníci)</li>
+      <li>Správu placených reklamních kampaní</li>
+      <li>Funkce výslovně neuvedené v sjednaném tarifu</li>
+    </ul>
+  </section>
+
+  <section id="obsah">
+    <h2><span class="num">03</span> Odpovědnost za obsah</h2>
+    <p>Zákazník je <strong>výhradně a plně odpovědný</strong> za veškerý obsah který předkládá k publikaci prostřednictvím služby MůjAsistent.</p>
+
+    <h3>Zákazník se zavazuje nepublikovat obsah který</h3>
+    <ul>
+      <li>Obsahuje nenávistné projevy, rasismus nebo diskriminaci</li>
+      <li>Je sexuálně explicitní nebo pornografický</li>
+      <li>Porušuje autorská práva třetích osob</li>
+      <li>Šíří nepravdivé informace nebo je podvodný</li>
+      <li>Porušuje Podmínky služby Meta (Instagram, Facebook) nebo LinkedIn</li>
+      <li>Je v rozporu s platnými právními předpisy ČR a EU</li>
+    </ul>
+
+    <h3>Schvalovací workflow</h3>
+    <p>Agent nikdy nepublikuje příspěvek bez explicitního souhlasu zákazníka. Každý publikovaný příspěvek je zákazníkem vědomě schválen. Zákazník nemůže namítat, že byl obsah publikován bez jeho vědomí.</p>
+
+    <p>Provozovatel je oprávněn odmítnout zpracování nebo publikaci obsahu který porušuje tato pravidla, a to bez nároku zákazníka na slevu nebo náhradu.</p>
+  </section>
+
+  <section id="cena">
+    <h2><span class="num">04</span> Cena a fakturace</h2>
+
+    <p>Ceny jednotlivých tarifů jsou uvedeny v aktuálním ceníku dostupném na vyžádání u provozovatele. Provozovatel si vyhrazuje právo ceník upravit s předstihem 30 dní.</p>
+
+    <h3>Podmínky fakturace</h3>
+    <ul>
+      <li>Fakturace probíhá měsíčně, předem</li>
+      <li>Splatnost faktury: 14 dní</li>
+      <li>Při překročení limitu tarifu provozovatel zákazníka upozorní a navrhne přechod na vyšší tarif</li>
+    </ul>
+  </section>
+
+  <section id="ukonceni">
+    <h2><span class="num">05</span> Ukončení smlouvy</h2>
+
+    <h3>Výpověď ze strany zákazníka</h3>
+    <p>Zákazník může smlouvu ukončit kdykoliv s výpovědní dobou <strong>30 dní</strong> ke konci fakturačního období. Výpověď je nutné zaslat e-mailem na zemlicka.jakub@gmail.com.</p>
+
+    <h3>Okamžité ukončení ze strany provozovatele</h3>
+    <p>Provozovatel je oprávněn okamžitě ukončit poskytování služby bez nároku na vrácení poplatků pokud zákazník:</p>
+    <ul>
+      <li>Opakovaně porušuje pravidla obsahu (čl. 3)</li>
+      <li>Nezaplatí fakturu ani po upomínce</li>
+      <li>Zneužívá infrastrukturu nebo AI agenta</li>
+    </ul>
+
+    <h3>Co se stane s daty po ukončení</h3>
+    <ul>
+      <li>Přístupy k sociálním sítím zákazníka jsou ihned odstraněny</li>
+      <li>Komunikační logy jsou uchovány 24 měsíců dle zákonných povinností</li>
+      <li>Zákazník může požádat o výmaz osobních údajů (viz GDPR, čl. 6)</li>
+    </ul>
+  </section>
+
+  <section id="gdpr">
+    <h2><span class="num">06</span> Zpracování osobních údajů (GDPR)</h2>
+
+    <p>Provozovatel zpracovává osobní údaje zákazníka jako <strong>zpracovatel</strong> ve smyslu Nařízení GDPR (EU) 2016/679.</p>
+
+    <h3>Jaké údaje zpracováváme</h3>
+    <ul>
+      <li>Kontaktní údaje (jméno, telefon, e-mail, Telegram username)</li>
+      <li>Informace o byznysu zákazníka (popis, sociální sítě, styl komunikace)</li>
+      <li>Komunikační logy (zadání zákazníka, návrhy agenta, schválení a odmítnutí)</li>
+      <li>Přístupové tokeny k sociálním sítím zákazníka</li>
+    </ul>
+
+    <h3>Jak údaje chráníme</h3>
+    <ul>
+      <li>Přístupové tokeny jsou šifrovaně uloženy na zabezpečeném serveru</li>
+      <li>K údajům má přístup výhradně provozovatel</li>
+      <li>Logy jsou uchovávány 24 měsíců</li>
+    </ul>
+
+    <h3>Vaše práva</h3>
+    <p>Zákazník má právo na přístup ke svým údajům, jejich opravu, výmaz nebo přenositelnost. Žádosti zasílejte na zemlicka.jakub@gmail.com.</p>
+  </section>
+
+  <section id="omezeni">
+    <h2><span class="num">07</span> Omezení odpovědnosti</h2>
+    <p>Provozovatel negarantuje konkrétní obchodní výsledky (počet sledujících, dosah příspěvků, nové zákazníky). Služba je poskytována jako nástroj — výsledky závisí na kvalitě obsahu, oboru a aktivitě zákazníka.</p>
+    <p>Provozovatel nenese odpovědnost za výpadky služeb třetích stran (Instagram, Facebook, LinkedIn, Telegram) ani za změny jejich podmínek nebo API.</p>
+  </section>
+
+  <section id="zmeny">
+    <h2><span class="num">08</span> Změny podmínek</h2>
+    <p>Provozovatel si vyhrazuje právo tyto podmínky kdykoliv upravit. O změnách bude zákazník informován e-mailem nebo přes Telegram s předstihem <strong>14 dní</strong>. Pokračování ve využívání služby po tomto datu znamená souhlas s novými podmínkami.</p>
+  </section>
+
+  <section id="kontakt">
+    <h2><span class="num">09</span> Kontakt</h2>
+    <div class="contact-box">
+      <h3>MůjAsistent</h3>
+      <p>Jakub Žemlička<br>
+      <a href="mailto:zemlicka.jakub@gmail.com">zemlicka.jakub@gmail.com</a><br>
+      Telegram: @MujAsistent</p>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 MůjAsistent · Jakub Žemlička · Verze 1.0 · Platné od 1. dubna 2026<br>
+</footer>
+
+</body>
+</html>
