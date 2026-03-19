@@ -148,6 +148,28 @@
 
   .highlight strong { color: #92400e; }
 
+  .highlight-blue {
+    background: var(--accent-light);
+    border: 1px solid #c7d2fe;
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    font-size: 14px;
+  }
+
+  .highlight-blue strong { color: var(--accent); }
+
+  .highlight-green {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    font-size: 14px;
+  }
+
+  .highlight-green strong { color: #166534; }
+
   .contact-box {
     background: var(--ink);
     color: white;
@@ -183,16 +205,18 @@
   <div class="meta">
     <span>📄 Podmínky služby</span>
     <span>📅 Platné od: 1. dubna 2026</span>
-    <span>✏️ Verze 2.0</span>
+    <span>✏️ Verze 4.0</span>
   </div>
 
   <div class="toc">
     <h2>Obsah</h2>
     <ol>
-      <li><a href="#provozovatel">Provozovatel služby</a></li>
+      <li><a href="#provozovatel">Provozovatel služby a uzavření smlouvy</a></li>
       <li><a href="#sluzba">Co je MůjAsistent</a></li>
-      <li><a href="#obsah">Odpovědnost za obsah</a></li>
-      <li><a href="#cena">Cena a fakturace</a></li>
+      <li><a href="#obsah">Pravidla obsahu a odpovědnost</a></li>
+      <li><a href="#socialni-site">Přístup k sociálním sítím</a></li>
+      <li><a href="#cena">Cena, fakturace a limity</a></li>
+      <li><a href="#zkusebni">Zkušební období</a></li>
       <li><a href="#ukonceni">Ukončení smlouvy</a></li>
       <li><a href="#gdpr">Zpracování osobních údajů (GDPR)</a></li>
       <li><a href="#omezeni">Omezení odpovědnosti</a></li>
@@ -203,23 +227,33 @@
     </ol>
   </div>
 
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ČL. 1 — PROVOZOVATEL A UZAVŘENÍ SMLOUVY       -->
+  <!-- ═══════════════════════════════════════════════ -->
   <section id="provozovatel">
-    <h2><span class="num">01</span> Provozovatel služby</h2>
+    <h2><span class="num">01</span> Provozovatel služby a uzavření smlouvy</h2>
     <p>Službu MůjAsistent provozuje:</p>
     <p>
       <strong>Jakub Žemlička</strong><br>
       IČO: 22059644<br>
       Sídlo: Dlážděná 1491/3, Praha — Nové Město, 110 00<br>
-      E-mail: ZemlickaJ@mujasistentai.cz
+      E-mail: ZemlickaJ@mujasistentai.cz<br>
+      Telegram: @MujAsistent
     </p>
 
     <p>Služba MůjAsistent je určena jak pro podnikatele, tak pro spotřebitele (nepodnikající fyzické osoby).</p>
 
+    <h3>Uzavření smlouvy</h3>
+    <p>Smlouva je uzavírána distančním způsobem (online) ve smyslu § 1820 a násl. zákona č. 89/2012 Sb., občanského zákoníku. Smlouva se považuje za uzavřenou okamžikem, kdy zákazník potvrdí objednávku služby a provozovatel toto potvrzení akceptuje (zpravidla zasláním přístupových údajů nebo zahájením poskytování služby). Smlouva se uzavírá na dobu neurčitou.</p>
+
     <div class="highlight">
-      <strong>ℹ️ Informace pro spotřebitele:</strong> Pokud jste spotřebitel ve smyslu § 419 zákona č. 89/2012 Sb., občanského zákoníku, máte právo odstoupit od smlouvy uzavřené distančním způsobem bez udání důvodu ve lhůtě <strong>14 dnů</strong> ode dne uzavření smlouvy (§ 1829 občanského zákoníku). Odstoupení zašlete e-mailem na ZemlickaJ@mujasistentai.cz. Pokud jste v této lhůtě s výslovným souhlasem požádali o zahájení poskytování služby a služba byla v plném rozsahu poskytnuta, právo na odstoupení vám zaniká (§ 1837 písm. a) občanského zákoníku). V případě částečného plnění máte nárok na vrácení poměrné části ceny.
+      <strong>ℹ️ Informace pro spotřebitele:</strong> Pokud jste spotřebitel ve smyslu § 419 občanského zákoníku, máte právo odstoupit od smlouvy uzavřené distančním způsobem bez udání důvodu ve lhůtě <strong>14 dnů</strong> ode dne uzavření smlouvy (§ 1829 občanského zákoníku). Odstoupení zašlete e-mailem na ZemlickaJ@mujasistentai.cz. Pokud jste v&nbsp;této lhůtě s&nbsp;výslovným souhlasem požádali o&nbsp;zahájení poskytování služby a&nbsp;služba byla v&nbsp;plném rozsahu poskytnuta, právo na odstoupení vám zaniká (§ 1837 písm. a) občanského zákoníku). V&nbsp;případě částečného plnění máte nárok na vrácení poměrné části ceny.
     </div>
   </section>
 
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ČL. 2 — CO JE MŮJASISTENT                     -->
+  <!-- ═══════════════════════════════════════════════ -->
   <section id="sluzba">
     <h2><span class="num">02</span> Co je MůjAsistent</h2>
     <p>MůjAsistent je platforma poskytující zákazníkovi dedikovaného AI agenta přizpůsobeného jeho byznysu. Agent pomáhá s každodenními úkoly dle aktuální nabídky služeb a sjednaného tarifu — například s tvorbou obsahu, marketingem na sociálních médiích, komunikací se zákazníky a dalšími oblastmi.</p>
@@ -233,68 +267,149 @@
     </ul>
   </section>
 
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ČL. 3 — PRAVIDLA OBSAHU A ODPOVĚDNOST         -->
+  <!-- (content-policy-klauzule.md čl. X, Y, Z)       -->
+  <!-- ═══════════════════════════════════════════════ -->
   <section id="obsah">
-    <h2><span class="num">03</span> Odpovědnost za obsah</h2>
-    <p>Zákazník je <strong>výhradně a plně odpovědný</strong> za veškerý obsah, který předkládá k publikaci prostřednictvím služby MůjAsistent.</p>
+    <h2><span class="num">03</span> Pravidla obsahu a odpovědnost</h2>
+    <p>Provozovatel vystupuje výhradně jako technický zprostředkovatel — poskytuje nástroje pro tvorbu a publikaci obsahu, ale o konečné podobě a zveřejnění rozhoduje vždy zákazník.</p>
+    <p>Zákazník je <strong>výhradně a plně odpovědný</strong> za veškerý obsah (texty, fotografie, videa, grafické materiály), který předkládá k publikaci prostřednictvím služby MůjAsistent. Provozovatel nenese žádnou odpovědnost za obsah zadaný zákazníkem.</p>
 
-    <h3>Zákazník se zavazuje nepublikovat obsah, který</h3>
+    <h3>Zakázaný obsah</h3>
+    <p>Zákazník se zavazuje, že prostřednictvím služby MůjAsistent nebude publikovat ani navrhovat k publikaci obsah, který:</p>
     <ul>
-      <li>Obsahuje nenávistné projevy, rasismus nebo diskriminaci</li>
-      <li>Je sexuálně explicitní nebo pornografický</li>
-      <li>Porušuje autorská práva třetích osob</li>
-      <li>Šíří nepravdivé informace nebo je podvodný</li>
-      <li>Porušuje Podmínky služby Meta (Instagram, Facebook) nebo LinkedIn</li>
-      <li>Je v rozporu s platnými právními předpisy ČR a EU</li>
+      <li>Obsahuje prvky rasové, etnické, náboženské nebo jiné nenávistné řeči</li>
+      <li>Zobrazuje nebo naráží na pornografický, sexuálně explicitní nebo obscénní obsah</li>
+      <li>Zobrazuje násilí, zbraně nebo podněcuje k násilnému jednání</li>
+      <li>Porušuje autorská práva, ochranné známky nebo jiná práva duševního vlastnictví třetích osob</li>
+      <li>Šíří dezinformace, nepravdivé informace nebo podvodný obsah</li>
+      <li>Propaguje nebo glorifikuje nelegální aktivity</li>
+      <li>Obtěžuje, šikanuje nebo zastrašuje konkrétní osoby nebo skupiny</li>
+      <li>Porušuje podmínky služby platforem, na které je obsah publikován (např. Meta, LinkedIn)</li>
+      <li>Je v rozporu s platnými právními předpisy České republiky nebo EU</li>
     </ul>
 
     <h3>Schvalovací workflow</h3>
-    <p>Agent nikdy nepublikuje příspěvek bez explicitního souhlasu zákazníka. Každý publikovaný příspěvek je zákazníkem vědomě schválen. Zákazník nemůže namítat, že byl obsah publikován bez jeho vědomí.</p>
+    <p>AI agent navrhuje příspěvky a zákazník je publikuje výhradně na základě vlastního vědomého souhlasu (schválení). Každý publikovaný příspěvek je tak výslovně schválen zákazníkem. Zákazník nemůže namítat, že byl obsah publikován bez jeho vědomí.</p>
+    <p>Pokud zákazník na návrh příspěvku nereaguje do 48 hodin, agent zašle připomínku. Po 72 hodinách bez reakce je návrh archivován.</p>
 
-    <p>Provozovatel je oprávněn odmítnout zpracování nebo publikaci obsahu, který porušuje tato pravidla, a to bez nároku zákazníka na slevu nebo náhradu.</p>
+    <h3>Právo odmítnutí</h3>
+    <p>Provozovatel (resp. AI agent) je oprávněn odmítnout návrh, zpracování nebo publikaci jakéhokoliv obsahu, který je v rozporu s tímto článkem, a to bez nároku zákazníka na slevu nebo náhradu.</p>
+
+    <h3>Odškodnění provozovatele</h3>
+    <p>V případě, že zákazník poruší pravidla tohoto článku a v důsledku tohoto porušení vznikne provozovateli škoda (včetně pozastavení nebo zrušení přístupu k platformám třetích stran, sankcí ze strany těchto platforem a nákladů na právní zastoupení), zákazník se zavazuje provozovatele plně odškodnit.</p>
+
+    <h3>Prohlášení zákazníka</h3>
+    <p>Zákazník prohlašuje, že:</p>
+    <ul>
+      <li>Je oprávněn publikovat veškerý obsah, který předkládá (vlastní práva nebo disponuje souhlasem oprávněných osob)</li>
+      <li>Porozuměl pravidlům publikovaného obsahu dle tohoto článku</li>
+      <li>Zavazuje se nejednat způsobem, který by mohl poškodit provozovatele nebo jeho technickou infrastrukturu</li>
+      <li>Byl seznámen s podmínkami služby platforem, na které je obsah publikován, a souhlasí s jejich dodržováním</li>
+    </ul>
   </section>
 
-  <section id="cena">
-    <h2><span class="num">04</span> Cena a fakturace</h2>
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ČL. 4 — PŘÍSTUP K SOCIÁLNÍM SÍTÍM             -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="socialni-site">
+    <h2><span class="num">04</span> Přístup k sociálním sítím</h2>
 
-    <p>Ceny jednotlivých tarifů jsou uvedeny v aktuálním ceníku dostupném na vyžádání u provozovatele. Provozovatel si vyhrazuje právo ceník upravit s předstihem 30 dní.</p>
+    <p>Za účelem poskytování služby zákazník uděluje provozovateli oprávnění jednat jeho jménem na propojených sociálních sítích, a to výhradně v rozsahu nezbytném pro plnění sjednaného tarifu (zejména: publikace příspěvků, správa komentářů a zpráv dle tarifu).</p>
+
+    <h3>Zákazník prohlašuje a zavazuje se, že</h3>
+    <ul>
+      <li>Je oprávněným vlastníkem nebo správcem propojených účtů na sociálních sítích</li>
+      <li>Má oprávnění udělit provozovateli přístup k těmto účtům</li>
+      <li>Neposkytne přístup k účtům třetích osob bez jejich výslovného souhlasu</li>
+    </ul>
+
+    <h3>Přístupové tokeny</h3>
+    <p>Provozovatel ukládá přístupové tokeny k sociálním sítím zákazníka šifrovaně na zabezpečeném serveru. Tokeny jsou použity výhradně za účelem poskytování služby. Po ukončení smlouvy jsou veškeré přístupové tokeny neprodleně a nevratně odstraněny.</p>
+
+    <p>Provozovatel nenese odpovědnost za změny podmínek, API nebo funkcionality platforem třetích stran (sociální sítě, komunikační platformy, poskytovatelé AI modelů apod.), které mohou ovlivnit rozsah nebo dostupnost služby.</p>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ČL. 5 — CENA, FAKTURACE A LIMITY              -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="cena">
+    <h2><span class="num">05</span> Cena, fakturace a limity</h2>
+
+    <p>Ceny jednotlivých tarifů jsou uvedeny v aktuálním ceníku dostupném na vyžádání u provozovatele. Všechny ceny jsou uvedeny bez DPH, není-li uvedeno jinak.</p>
 
     <h3>Podmínky fakturace</h3>
     <ul>
       <li>Fakturace probíhá měsíčně, předem</li>
       <li>Splatnost faktury: 14 dní</li>
-      <li>Při překročení limitu tarifu provozovatel zákazníka upozorní a navrhne přechod na vyšší tarif</li>
     </ul>
 
-    <h3>Nesouhlasí-li zákazník se změnou ceníku</h3>
-    <p>Pokud zákazník nesouhlasí s novou cenou, má právo smlouvu vypovědět bez výpovědní doby ke konci fakturačního období, v&nbsp;němž mu byla změna oznámena. Do konce tohoto období platí původní cena.</p>
+    <h3>Limity tarifu a překročení (fair use)</h3>
+    <p>Každý tarif zahrnuje stanovený rozsah služeb (počet příspěvků, počet zpráv agentu a další dle aktuálního ceníku). Konkrétní limity jsou uvedeny v ceníku příslušného tarifu.</p>
+    <p>Při dosažení limitu tarifu provozovatel zákazníka informuje a nabídne přechod na vyšší tarif. Služba nebude okamžitě přerušena — zákazník má možnost reagovat na nabídku. Pokud zákazník upgrade odmítne nebo nereaguje, agent přestane přijímat nové příspěvky do začátku dalšího fakturačního období.</p>
+
+    <div class="highlight-green">
+      <strong>✅ Bez tvrdého vypnutí:</strong> Při překročení limitu dojde k pozastavení přijímání nových příspěvků, nikoliv k výpadku celé služby. Zákazník bude vždy upozorněn s dostatečným předstihem.
+    </div>
+
+    <h3>Změna ceníku</h3>
+    <p>Provozovatel si vyhrazuje právo ceník upravit. O změně bude zákazník informován e-mailem nebo přes Telegram s předstihem nejméně <strong>30 dní</strong> před účinností nové ceny.</p>
+    <p>Pokud zákazník s novou cenou nesouhlasí, má právo smlouvu vypovědět bez výpovědní doby ke konci fakturačního období, v&nbsp;němž mu byla změna oznámena. Do konce tohoto období platí původní cena.</p>
   </section>
 
-  <section id="ukonceni">
-    <h2><span class="num">05</span> Ukončení smlouvy</h2>
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ČL. 6 — ZKUŠEBNÍ OBDOBÍ                       -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="zkusebni">
+    <h2><span class="num">06</span> Zkušební období</h2>
+    <p>Provozovatel může zákazníkovi nabídnout bezplatné zkušební období v délce až <strong>14 dní</strong>. Během zkušebního období má zákazník přístup ke službě v rozsahu tarifu START, není-li dohodnuto jinak.</p>
 
-    <h3>Výpověď ze strany zákazníka</h3>
-    <p>Zákazník může smlouvu ukončit kdykoliv s výpovědní dobou <strong>30 dní</strong> ke konci fakturačního období. Výpověď je nutné zaslat e-mailem na ZemlickaJ@mujasistentai.cz.</p>
+    <h3>Co se stane po skončení zkušebního období</h3>
+    <p>Služba <strong>není automaticky převedena</strong> na placený tarif. Po uplynutí zkušebního období provozovatel zákazníka kontaktuje s nabídkou placených tarifů. Pokud zákazník do 7 dnů po skončení zkušebního období nepotvrdí přechod na placený tarif, agent přestane být aktivní a přístupy k sociálním sítím budou odstraněny.</p>
+    <p>Na zkušební období se vztahují všechna ustanovení těchto podmínek (zejména pravidla obsahu dle čl. 3 a GDPR dle čl. 8).</p>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ČL. 7 — UKONČENÍ SMLOUVY                      -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="ukonceni">
+    <h2><span class="num">07</span> Ukončení smlouvy</h2>
+
+    <h3>Výpověď ze strany zákazníka — podnikatel</h3>
+    <p>Zákazník-podnikatel může smlouvu ukončit kdykoliv s výpovědní dobou <strong>30 dní</strong> ke konci fakturačního období. Výpověď je nutné zaslat e-mailem na ZemlickaJ@mujasistentai.cz.</p>
+
+    <h3>Výpověď ze strany zákazníka — spotřebitel</h3>
+    <p>Zákazník-spotřebitel může smlouvu vypovědět kdykoliv s účinností ke konci aktuálního uhrazeného fakturačního období. Výpověď je nutné zaslat e-mailem na ZemlickaJ@mujasistentai.cz. Tím není dotčeno právo spotřebitele na odstoupení od smlouvy do 14 dnů dle čl. 1.</p>
 
     <h3>Okamžité ukončení ze strany provozovatele</h3>
-    <p>Provozovatel je oprávněn okamžitě ukončit poskytování služby bez nároku na vrácení poplatků, pokud zákazník:</p>
+    <p>Provozovatel je oprávněn okamžitě ukončit poskytování služby písemným oznámením (e-mailem) bez nároku na vrácení poplatků, pokud zákazník:</p>
     <ul>
-      <li>Opakovaně porušuje pravidla obsahu (čl. 3)</li>
-      <li>Nezaplatí fakturu ani po upomínce</li>
-      <li>Zneužívá infrastrukturu nebo AI agenta</li>
+      <li>Opakovaně porušuje pravidla obsahu (čl. 3), a to i po písemném upozornění</li>
+      <li>Nezaplatí fakturu ani do 14 dnů po zaslání písemné upomínky</li>
+      <li>Prokazatelně zneužívá infrastrukturu nebo AI agenta (např. automatizované útoky, přetěžování systému, pokusy o obcházení bezpečnostních opatření)</li>
     </ul>
 
     <h3>Co se stane s daty po ukončení</h3>
     <ul>
-      <li>Přístupy k sociálním sítím zákazníka jsou ihned odstraněny</li>
-      <li>Komunikační logy jsou uchovány po dobu 12 měsíců</li>
-      <li>Zákazník může požádat o výmaz osobních údajů (viz GDPR, čl. 6)</li>
+      <li>Přístupy k sociálním sítím zákazníka a přístupové tokeny jsou ihned a nevratně odstraněny</li>
+      <li>Komunikační logy (zadání, návrhy, schválení, odmítnutí) jsou uchovány po dobu 12 měsíců od ukončení smlouvy za účelem ochrany práv obou stran a řešení případných sporů</li>
+      <li>Fakturační údaje jsou uchovány po dobu stanovenou daňovými předpisy</li>
+      <li>Zákazník může požádat o výmaz osobních údajů (viz čl. 8)</li>
     </ul>
   </section>
 
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ČL. 8 — GDPR                                  -->
+  <!-- ═══════════════════════════════════════════════ -->
   <section id="gdpr">
-    <h2><span class="num">06</span> Zpracování osobních údajů (GDPR)</h2>
+    <h2><span class="num">08</span> Zpracování osobních údajů (GDPR)</h2>
 
     <p>Provozovatel zpracovává osobní údaje zákazníka jako <strong>správce</strong> ve smyslu Nařízení Evropského parlamentu a Rady (EU) 2016/679 (dále jen „GDPR").</p>
+
+    <div class="highlight-blue">
+      <strong>📋 Zpracování údajů koncových zákazníků:</strong> Pokud zákazník prostřednictvím služby zpracovává osobní údaje svých vlastních koncových zákazníků (např. komunikace na sociálních sítích), vystupuje provozovatel ve vztahu k těmto údajům jako <strong>zpracovatel</strong>. V&nbsp;takovém případě uzavřou strany samostatnou smlouvu o zpracování osobních údajů (DPA) dle čl. 28 GDPR.
+    </div>
 
     <h3>Právní základ zpracování</h3>
     <ul>
@@ -312,15 +427,22 @@
       <li>Přístupové tokeny k sociálním sítím zákazníka</li>
     </ul>
 
+    <h3>Doba uchování</h3>
+    <ul>
+      <li>Komunikační logy: 12 měsíců od ukončení smlouvy</li>
+      <li>Fakturační údaje: po dobu stanovenou daňovými předpisy (zpravidla 10 let)</li>
+      <li>Přístupové tokeny: ihned po ukončení smlouvy jsou odstraněny</li>
+    </ul>
+
     <h3>Jak údaje chráníme</h3>
     <ul>
       <li>Přístupové tokeny jsou šifrovaně uloženy na zabezpečeném serveru</li>
       <li>K údajům má přístup výhradně provozovatel</li>
-      <li>Logy jsou uchovávány po dobu 12 měsíců od ukončení smlouvy</li>
+      <li>Provozovatel přijal přiměřená technická a organizační opatření k ochraně údajů</li>
     </ul>
 
     <h3>Předávání údajů třetím stranám</h3>
-    <p>Za účelem poskytování služby mohou být osobní údaje předávány poskytovatelům AI modelů (např. Anthropic, OpenAI), jejichž servery se mohou nacházet mimo Evropský hospodářský prostor. Předávání probíhá na základě standardních smluvních doložek (čl. 46 odst. 2 písm. c) GDPR) nebo rozhodnutí Evropské komise o přiměřenosti ochrany.</p>
+    <p>Za účelem poskytování služby mohou být osobní údaje předávány poskytovatelům AI modelů (např. Anthropic, OpenAI), jejichž servery se mohou nacházet mimo Evropský hospodářský prostor. Předávání probíhá v souladu s podmínkami těchto poskytovatelů a na základě standardních smluvních doložek (čl. 46 odst. 2 písm. c) GDPR) nebo rozhodnutí Evropské komise o přiměřenosti ochrany.</p>
 
     <h3>Vaše práva</h3>
     <p>Zákazník má dle GDPR právo na:</p>
@@ -334,36 +456,62 @@
     </ul>
     <p>Žádosti zasílejte na ZemlickaJ@mujasistentai.cz. Provozovatel odpoví bez zbytečného odkladu, nejpozději do 30 dnů.</p>
 
-    <p>Zákazník má rovněž právo podat stížnost u <strong>Úřadu pro ochranu osobních údajů</strong> (ÚOOÚ), Pplk. Sochora 27, 170 00 Praha 7, <a href="https://www.uoou.cz" target="_blank">www.uoou.cz</a>.</p>
+    <p>Zákazník má rovněž právo podat stížnost u <strong>Úřadu pro ochranu osobních údajů</strong> (ÚOOÚ), Pplk. Sochora 27, 170 00 Praha 7, e-mail: posta@uoou.cz, <a href="https://www.uoou.cz" target="_blank">www.uoou.cz</a>.</p>
   </section>
 
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ČL. 9 — OMEZENÍ ODPOVĚDNOSTI                  -->
+  <!-- ═══════════════════════════════════════════════ -->
   <section id="omezeni">
-    <h2><span class="num">07</span> Omezení odpovědnosti</h2>
+    <h2><span class="num">09</span> Omezení odpovědnosti</h2>
     <p>Provozovatel negarantuje konkrétní obchodní výsledky (počet sledujících, dosah příspěvků, nové zákazníky). Služba je poskytována jako nástroj — výsledky závisí na kvalitě obsahu, oboru a aktivitě zákazníka.</p>
-    <p>Provozovatel nenese odpovědnost za výpadky služeb třetích stran (sociální sítě, komunikační platformy, poskytovatelé AI modelů apod.) ani za změny jejich podmínek nebo API.</p>
+
+    <h3>Dostupnost služby</h3>
+    <p>Služba je poskytována „tak, jak je" (<em>as-is</em>). Provozovatel vynaloží přiměřené úsilí k zajištění dostupnosti a plynulého chodu služby, může však docházet k dočasným výpadkům nebo omezením z důvodu údržby, aktualizací, technických závad nebo okolností na straně třetích stran.</p>
+
     <p>Celková odpovědnost provozovatele za škody vzniklé v souvislosti s poskytováním služby je omezena na částku odpovídající poslednímu měsíčnímu poplatku uhrazenému zákazníkem.</p>
+
+    <div class="highlight">
+      <strong>⚖️ Omezení se neuplatní</strong> v případě škody způsobené úmyslně nebo z hrubé nedbalosti (§ 2898 občanského zákoníku), ani v případě škody na zdraví nebo na přirozených právech člověka. U&nbsp;spotřebitelů se omezení odpovědnosti uplatní pouze v rozsahu přípustném právními předpisy na ochranu spotřebitele.
+    </div>
   </section>
 
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ČL. 10 — VYŠŠÍ MOC                            -->
+  <!-- ═══════════════════════════════════════════════ -->
   <section id="vyssi-moc">
-    <h2><span class="num">08</span> Vyšší moc</h2>
+    <h2><span class="num">10</span> Vyšší moc</h2>
     <p>Provozovatel neodpovídá za prodlení nebo neplnění svých povinností, pokud je způsobeno okolnostmi vyšší moci — zejména výpadky elektrické energie, internetového připojení, služeb třetích stran, přírodními katastrofami, pandemií, válečnými konflikty nebo rozhodnutím orgánů veřejné moci.</p>
     <p>Po dobu trvání vyšší moci se plnění povinností provozovatele pozastavuje. Pokud okolnosti vyšší moci trvají déle než 60 dní, má kterákoliv smluvní strana právo smlouvu vypovědět bez výpovědní doby.</p>
   </section>
 
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ČL. 11 — ZMĚNY PODMÍNEK                       -->
+  <!-- ═══════════════════════════════════════════════ -->
   <section id="zmeny">
-    <h2><span class="num">09</span> Změny podmínek</h2>
-    <p>Provozovatel si vyhrazuje právo tyto podmínky kdykoliv upravit. O změnách bude zákazník informován e-mailem nebo přes Telegram s předstihem <strong>14 dní</strong>.</p>
-    <p>Pokud zákazník se změnami nesouhlasí, má právo smlouvu vypovědět ke dni účinnosti nových podmínek. Pokračování ve využívání služby po datu účinnosti nových podmínek znamená souhlas s nimi.</p>
+    <h2><span class="num">11</span> Změny podmínek</h2>
+    <p>Provozovatel si vyhrazuje právo tyto podmínky upravit. O změnách bude zákazník informován e-mailem nebo přes Telegram s předstihem nejméně <strong>14 dní</strong> před datem účinnosti nových podmínek. Změny ceníku se řídí čl. 5 (30denní předstih).</p>
+    <p>Pokud zákazník se změnami nesouhlasí, má právo smlouvu vypovědět ke dni účinnosti nových podmínek zasláním e-mailu na ZemlickaJ@mujasistentai.cz.</p>
+    <p>Spotřebitel musí s novými podmínkami výslovně souhlasit (např. potvrzením v e-mailu nebo v aplikaci). Pouhé pokračování ve využívání služby nepředstavuje u spotřebitele souhlas se změnami.</p>
   </section>
 
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ČL. 12 — ROZHODNÉ PRÁVO                       -->
+  <!-- ═══════════════════════════════════════════════ -->
   <section id="rozhodne-pravo">
-    <h2><span class="num">10</span> Rozhodné právo a řešení sporů</h2>
+    <h2><span class="num">12</span> Rozhodné právo a řešení sporů</h2>
     <p>Tyto podmínky se řídí právním řádem České republiky, zejména zákonem č. 89/2012 Sb., občanským zákoníkem, ve znění pozdějších předpisů.</p>
     <p>Veškeré spory, které vzniknou z těchto podmínek nebo v souvislosti s nimi, budou řešeny přednostně smírnou cestou. Nepodaří-li se spor vyřešit smírně do 30 dnů, bude rozhodnut věcně a místně příslušným soudem v České republice.</p>
+
+    <h3>Mimosoudní řešení sporů pro spotřebitele</h3>
+    <p>Spotřebitel má právo na mimosoudní řešení spotřebitelského sporu. Příslušným subjektem je <strong>Česká obchodní inspekce</strong> (ČOI), Štěpánská 796/44, 110 00 Praha 1, <a href="https://www.coi.cz" target="_blank">www.coi.cz</a>. Spotřebitel může rovněž využít platformu pro řešení sporů online na adrese <a href="https://ec.europa.eu/consumers/odr" target="_blank">ec.europa.eu/consumers/odr</a>.</p>
   </section>
 
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ČL. 13 — KONTAKT                              -->
+  <!-- ═══════════════════════════════════════════════ -->
   <section id="kontakt">
-    <h2><span class="num">11</span> Kontakt</h2>
+    <h2><span class="num">13</span> Kontakt</h2>
     <div class="contact-box">
       <h3>MůjAsistent</h3>
       <p>Jakub Žemlička<br>
@@ -375,7 +523,7 @@
 </div>
 
 <footer>
-  © 2026 MůjAsistent · Jakub Žemlička · Verze 2.0 · Platné od 1. dubna 2026<br>
+  © 2026 MůjAsistent · Jakub Žemlička · Verze 4.0 · Platné od 1. dubna 2026<br>
 </footer>
 
 </body>
