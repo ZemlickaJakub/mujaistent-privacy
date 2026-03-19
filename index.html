@@ -1,166 +1,382 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy — MůjAsistent</title>
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.7; }
-    h1 { color: #1a1a1a; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-    h2 { color: #333; margin-top: 30px; }
-    a { color: #0066cc; }
-    .lang-switch { text-align: right; margin-bottom: 20px; }
-    .lang-switch a { margin-left: 10px; }
-    .section-en { display: none; }
-    .last-updated { color: #666; font-size: 0.9em; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Podmínky služby — MůjAsistent</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap');
+
+  :root {
+    --ink: #1a1a2e;
+    --accent: #4f46e5;
+    --accent-light: #eef2ff;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+    --bg: #fafafa;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.8;
+    font-size: 16px;
+  }
+
+  header {
+    background: var(--ink);
+    color: white;
+    padding: 48px 0 40px;
+    text-align: center;
+  }
+
+  header .logo {
+    font-family: 'DM Serif Display', serif;
+    font-size: 28px;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+  }
+
+  header .logo span { color: #818cf8; }
+
+  header p {
+    font-size: 14px;
+    color: #9ca3af;
+    font-weight: 300;
+  }
+
+  .container {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .meta {
+    display: flex;
+    gap: 24px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--muted);
+    flex-wrap: wrap;
+  }
+
+  .meta span { display: flex; align-items: center; gap: 6px; }
+
+  .toc {
+    background: var(--accent-light);
+    border-left: 3px solid var(--accent);
+    padding: 24px 28px;
+    margin: 40px 0;
+    border-radius: 0 8px 8px 0;
+  }
+
+  .toc h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: var(--accent);
+  }
+
+  .toc ol {
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  .toc a { color: var(--accent); text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+
+  section {
+    padding: 40px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  section:last-of-type { border-bottom: none; }
+
+  h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: var(--ink);
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  h2 .num {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--accent);
+    background: var(--accent-light);
+    padding: 2px 8px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+  }
+
+  h3 {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 24px 0 8px;
+    color: var(--ink);
+  }
+
+  p { margin-bottom: 14px; color: #374151; }
+
+  ul, ol {
+    padding-left: 20px;
+    margin-bottom: 14px;
+    color: #374151;
+  }
+
+  li { margin-bottom: 6px; }
+
+  .highlight {
+    background: #fef9c3;
+    border: 1px solid #fde68a;
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    font-size: 14px;
+  }
+
+  .highlight strong { color: #92400e; }
+
+  .contact-box {
+    background: var(--ink);
+    color: white;
+    padding: 32px;
+    border-radius: 12px;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .contact-box h3 { color: white; margin: 0 0 8px; font-size: 18px; }
+  .contact-box p { color: #9ca3af; margin: 0; font-size: 14px; }
+  .contact-box a { color: #818cf8; }
+
+  footer {
+    text-align: center;
+    padding: 32px;
+    font-size: 13px;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+    margin-top: 40px;
+  }
+</style>
 </head>
 <body>
 
-  <div class="lang-switch">
-    <a href="#" onclick="showLang('cs'); return false;">🇨🇿 Česky</a>
-    <a href="#" onclick="showLang('en'); return false;">🇬🇧 English</a>
+<header>
+  <div class="logo">Můj<span>Asistent</span></div>
+  <p>AI asistent pro váš byznys</p>
+</header>
+
+<div class="container">
+
+  <div class="meta">
+    <span>📄 Podmínky služby</span>
+    <span>📅 Platné od: 1. dubna 2026</span>
+    <span>✏️ Verze 2.0</span>
   </div>
 
-  <!-- CZECH VERSION -->
-  <div class="section-cs">
-    <h1>Zásady ochrany osobních údajů</h1>
-    <p class="last-updated">Poslední aktualizace: Únor 2026</p>
+  <div class="toc">
+    <h2>Obsah</h2>
+    <ol>
+      <li><a href="#provozovatel">Provozovatel služby</a></li>
+      <li><a href="#sluzba">Co je MůjAsistent</a></li>
+      <li><a href="#obsah">Odpovědnost za obsah</a></li>
+      <li><a href="#cena">Cena a fakturace</a></li>
+      <li><a href="#ukonceni">Ukončení smlouvy</a></li>
+      <li><a href="#gdpr">Zpracování osobních údajů (GDPR)</a></li>
+      <li><a href="#omezeni">Omezení odpovědnosti</a></li>
+      <li><a href="#vyssi-moc">Vyšší moc</a></li>
+      <li><a href="#zmeny">Změny podmínek</a></li>
+      <li><a href="#rozhodne-pravo">Rozhodné právo a řešení sporů</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ol>
+  </div>
 
-    <h2>1. Provozovatel</h2>
+  <section id="provozovatel">
+    <h2><span class="num">01</span> Provozovatel služby</h2>
+    <p>Službu MůjAsistent provozuje:</p>
     <p>
-      Provozovatelem aplikace <strong>MůjAsistent</strong> je:<br>
-      Jakub Žemlička, OSVČ<br>
-      E-mail: <a href="mailto:zemlicka.jakub@gmail.com">zemlicka.jakub@gmail.com</a>
+      <strong>Jakub Žemlička</strong><br>
+      IČO: 22059644<br>
+      Sídlo: Dlážděná 1491/3, Praha — Nové Město, 110 00<br>
+      E-mail: ZemlickaJ@mujasistentai.cz
     </p>
 
-    <h2>2. Co je MůjAsistent</h2>
-    <p>
-      MůjAsistent je aplikace pro správu a publikaci obsahu na sociálních sítích (Facebook, Instagram)
-      prostřednictvím Meta Graph API. Aplikace umožňuje správcům Facebook stránek a Instagram účtů
-      vytvářet a publikovat příspěvky.
-    </p>
+    <p>Služba MůjAsistent je určena jak pro podnikatele, tak pro spotřebitele (nepodnikající fyzické osoby).</p>
 
-    <h2>3. Jaké údaje zpracováváme</h2>
-    <p>Aplikace zpracovává pouze údaje nezbytné pro svou funkci:</p>
+    <div class="highlight">
+      <strong>ℹ️ Informace pro spotřebitele:</strong> Pokud jste spotřebitel ve smyslu § 419 zákona č. 89/2012 Sb., občanského zákoníku, máte právo odstoupit od smlouvy uzavřené distančním způsobem bez udání důvodu ve lhůtě <strong>14 dnů</strong> ode dne uzavření smlouvy (§ 1829 občanského zákoníku). Odstoupení zašlete e-mailem na ZemlickaJ@mujasistentai.cz. Pokud jste v této lhůtě s výslovným souhlasem požádali o zahájení poskytování služby a služba byla v plném rozsahu poskytnuta, právo na odstoupení vám zaniká (§ 1837 písm. a) občanského zákoníku). V případě částečného plnění máte nárok na vrácení poměrné části ceny.
+    </div>
+  </section>
+
+  <section id="sluzba">
+    <h2><span class="num">02</span> Co je MůjAsistent</h2>
+    <p>MůjAsistent je platforma poskytující zákazníkovi dedikovaného AI agenta přizpůsobeného jeho byznysu. Agent pomáhá s každodenními úkoly dle aktuální nabídky služeb a sjednaného tarifu — například s tvorbou obsahu, marketingem na sociálních médiích, komunikací se zákazníky a dalšími oblastmi.</p>
+    <p>Konkrétní funkce a možnosti agenta jsou uvedeny v aktuální nabídce služeb. Provozovatel si vyhrazuje právo nabídku rozšiřovat a upravovat.</p>
+
+    <h3>Co služba nezahrnuje</h3>
     <ul>
-      <li>Přístupové tokeny k Facebook stránkám a Instagram účtům (uloženy bezpečně, nikdy nesdíleny)</li>
-      <li>ID Facebook stránek a Instagram Business účtů</li>
-      <li>Obsah příspěvků (text, obrázky) zadaný správcem k publikaci</li>
-      <li>Základní metadata stránek (název, ID) nutná pro fungování API</li>
+      <li>Garanci obchodních výsledků (počet sledujících, dosah příspěvků, noví zákazníci)</li>
+      <li>Správu placených reklamních kampaní</li>
+      <li>Funkce výslovně neuvedené v sjednaném tarifu</li>
     </ul>
-    <p>Aplikace <strong>nezpracovává</strong> osobní údaje fanoušků ani návštěvníků spravovaných stránek.</p>
+  </section>
 
-    <h2>4. Účel zpracování</h2>
-    <p>
-      Údaje jsou zpracovávány výhradně za účelem publikace obsahu na Facebook stránkách a Instagram
-      účtech dle pokynů správce. Žádné údaje nejsou prodávány, pronajímány ani sdíleny s třetími stranami.
-    </p>
+  <section id="obsah">
+    <h2><span class="num">03</span> Odpovědnost za obsah</h2>
+    <p>Zákazník je <strong>výhradně a plně odpovědný</strong> za veškerý obsah, který předkládá k publikaci prostřednictvím služby MůjAsistent.</p>
 
-    <h2>5. Meta platformy</h2>
-    <p>
-      Aplikace používá Meta Graph API v souladu s
-      <a href="https://developers.facebook.com/policy/" target="_blank">Meta Platform Policy</a>
-      a <a href="https://www.facebook.com/privacy/policy/" target="_blank">Meta Privacy Policy</a>.
-      Přístup k datům je omezen na oprávnění schválená Meta App Review procesem.
-    </p>
+    <h3>Zákazník se zavazuje nepublikovat obsah, který</h3>
+    <ul>
+      <li>Obsahuje nenávistné projevy, rasismus nebo diskriminaci</li>
+      <li>Je sexuálně explicitní nebo pornografický</li>
+      <li>Porušuje autorská práva třetích osob</li>
+      <li>Šíří nepravdivé informace nebo je podvodný</li>
+      <li>Porušuje Podmínky služby Meta (Instagram, Facebook) nebo LinkedIn</li>
+      <li>Je v rozporu s platnými právními předpisy ČR a EU</li>
+    </ul>
 
-    <h2>6. Zabezpečení</h2>
-    <p>
-      Přístupové tokeny jsou uloženy bezpečně a nikdy nejsou sdíleny s třetími stranami.
-      Aplikace používá výhradně šifrovaná HTTPS spojení pro komunikaci s Meta API.
-    </p>
+    <h3>Schvalovací workflow</h3>
+    <p>Agent nikdy nepublikuje příspěvek bez explicitního souhlasu zákazníka. Každý publikovaný příspěvek je zákazníkem vědomě schválen. Zákazník nemůže namítat, že byl obsah publikován bez jeho vědomí.</p>
 
-    <h2>7. Vaše práva (GDPR)</h2>
-    <p>Máte právo na:</p>
+    <p>Provozovatel je oprávněn odmítnout zpracování nebo publikaci obsahu, který porušuje tato pravidla, a to bez nároku zákazníka na slevu nebo náhradu.</p>
+  </section>
+
+  <section id="cena">
+    <h2><span class="num">04</span> Cena a fakturace</h2>
+
+    <p>Ceny jednotlivých tarifů jsou uvedeny v aktuálním ceníku dostupném na vyžádání u provozovatele. Provozovatel si vyhrazuje právo ceník upravit s předstihem 30 dní.</p>
+
+    <h3>Podmínky fakturace</h3>
+    <ul>
+      <li>Fakturace probíhá měsíčně, předem</li>
+      <li>Splatnost faktury: 14 dní</li>
+      <li>Při překročení limitu tarifu provozovatel zákazníka upozorní a navrhne přechod na vyšší tarif</li>
+    </ul>
+
+    <h3>Nesouhlasí-li zákazník se změnou ceníku</h3>
+    <p>Pokud zákazník nesouhlasí s novou cenou, má právo smlouvu vypovědět bez výpovědní doby ke konci fakturačního období, v&nbsp;němž mu byla změna oznámena. Do konce tohoto období platí původní cena.</p>
+  </section>
+
+  <section id="ukonceni">
+    <h2><span class="num">05</span> Ukončení smlouvy</h2>
+
+    <h3>Výpověď ze strany zákazníka</h3>
+    <p>Zákazník může smlouvu ukončit kdykoliv s výpovědní dobou <strong>30 dní</strong> ke konci fakturačního období. Výpověď je nutné zaslat e-mailem na ZemlickaJ@mujasistentai.cz.</p>
+
+    <h3>Okamžité ukončení ze strany provozovatele</h3>
+    <p>Provozovatel je oprávněn okamžitě ukončit poskytování služby bez nároku na vrácení poplatků, pokud zákazník:</p>
+    <ul>
+      <li>Opakovaně porušuje pravidla obsahu (čl. 3)</li>
+      <li>Nezaplatí fakturu ani po upomínce</li>
+      <li>Zneužívá infrastrukturu nebo AI agenta</li>
+    </ul>
+
+    <h3>Co se stane s daty po ukončení</h3>
+    <ul>
+      <li>Přístupy k sociálním sítím zákazníka jsou ihned odstraněny</li>
+      <li>Komunikační logy jsou uchovány po dobu 12 měsíců</li>
+      <li>Zákazník může požádat o výmaz osobních údajů (viz GDPR, čl. 6)</li>
+    </ul>
+  </section>
+
+  <section id="gdpr">
+    <h2><span class="num">06</span> Zpracování osobních údajů (GDPR)</h2>
+
+    <p>Provozovatel zpracovává osobní údaje zákazníka jako <strong>správce</strong> ve smyslu Nařízení Evropského parlamentu a Rady (EU) 2016/679 (dále jen „GDPR").</p>
+
+    <h3>Právní základ zpracování</h3>
+    <ul>
+      <li><strong>Plnění smlouvy</strong> (čl. 6 odst. 1 písm. b) GDPR) — zpracování údajů nezbytných pro poskytování služby</li>
+      <li><strong>Oprávněný zájem</strong> (čl. 6 odst. 1 písm. f) GDPR) — uchovávání komunikačních logů pro ochranu práv provozovatele a řešení případných sporů</li>
+      <li><strong>Plnění právní povinnosti</strong> (čl. 6 odst. 1 písm. c) GDPR) — uchovávání fakturačních údajů dle daňových předpisů</li>
+    </ul>
+
+    <h3>Jaké údaje zpracováváme</h3>
+    <ul>
+      <li>Kontaktní údaje (jméno, telefon, e-mail, Telegram username)</li>
+      <li>Fakturační údaje (IČO, DIČ, adresa sídla)</li>
+      <li>Informace o byznysu zákazníka (popis, sociální sítě, styl komunikace)</li>
+      <li>Komunikační logy (zadání zákazníka, návrhy agenta, schválení a odmítnutí)</li>
+      <li>Přístupové tokeny k sociálním sítím zákazníka</li>
+    </ul>
+
+    <h3>Jak údaje chráníme</h3>
+    <ul>
+      <li>Přístupové tokeny jsou šifrovaně uloženy na zabezpečeném serveru</li>
+      <li>K údajům má přístup výhradně provozovatel</li>
+      <li>Logy jsou uchovávány po dobu 12 měsíců od ukončení smlouvy</li>
+    </ul>
+
+    <h3>Předávání údajů třetím stranám</h3>
+    <p>Za účelem poskytování služby mohou být osobní údaje předávány poskytovatelům AI modelů (např. Anthropic, OpenAI), jejichž servery se mohou nacházet mimo Evropský hospodářský prostor. Předávání probíhá na základě standardních smluvních doložek (čl. 46 odst. 2 písm. c) GDPR) nebo rozhodnutí Evropské komise o přiměřenosti ochrany.</p>
+
+    <h3>Vaše práva</h3>
+    <p>Zákazník má dle GDPR právo na:</p>
     <ul>
       <li>Přístup ke svým osobním údajům</li>
       <li>Opravu nepřesných údajů</li>
-      <li>Výmaz údajů</li>
-      <li>Odvolání souhlasu se zpracováním</li>
+      <li>Výmaz údajů („právo být zapomenut")</li>
+      <li>Omezení zpracování</li>
+      <li>Přenositelnost údajů</li>
+      <li>Vznesení námitky proti zpracování</li>
     </ul>
-    <p>Pro uplatnění těchto práv nás kontaktujte na: <a href="mailto:zemlicka.jakub@gmail.com">zemlicka.jakub@gmail.com</a></p>
+    <p>Žádosti zasílejte na ZemlickaJ@mujasistentai.cz. Provozovatel odpoví bez zbytečného odkladu, nejpozději do 30 dnů.</p>
 
-    <h2>8. Změny zásad</h2>
-    <p>
-      Vyhrazujeme si právo tyto zásady aktualizovat. O změnách budete informováni prostřednictvím
-      aktualizace data "Poslední aktualizace" na této stránce.
-    </p>
-  </div>
+    <p>Zákazník má rovněž právo podat stížnost u <strong>Úřadu pro ochranu osobních údajů</strong> (ÚOOÚ), Pplk. Sochora 27, 170 00 Praha 7, <a href="https://www.uoou.cz" target="_blank">www.uoou.cz</a>.</p>
+  </section>
 
-  <!-- ENGLISH VERSION -->
-  <div class="section-en">
-    <h1>Privacy Policy</h1>
-    <p class="last-updated">Last updated: February 2026</p>
+  <section id="omezeni">
+    <h2><span class="num">07</span> Omezení odpovědnosti</h2>
+    <p>Provozovatel negarantuje konkrétní obchodní výsledky (počet sledujících, dosah příspěvků, nové zákazníky). Služba je poskytována jako nástroj — výsledky závisí na kvalitě obsahu, oboru a aktivitě zákazníka.</p>
+    <p>Provozovatel nenese odpovědnost za výpadky služeb třetích stran (sociální sítě, komunikační platformy, poskytovatelé AI modelů apod.) ani za změny jejich podmínek nebo API.</p>
+    <p>Celková odpovědnost provozovatele za škody vzniklé v souvislosti s poskytováním služby je omezena na částku odpovídající poslednímu měsíčnímu poplatku uhrazenému zákazníkem.</p>
+  </section>
 
-    <h2>1. Operator</h2>
-    <p>
-      The operator of the <strong>MůjAsistent</strong> application is:<br>
-      Jakub Žemlička, sole trader (OSVČ)<br>
-      E-mail: <a href="mailto:zemlicka.jakub@gmail.com">zemlicka.jakub@gmail.com</a>
-    </p>
+  <section id="vyssi-moc">
+    <h2><span class="num">08</span> Vyšší moc</h2>
+    <p>Provozovatel neodpovídá za prodlení nebo neplnění svých povinností, pokud je způsobeno okolnostmi vyšší moci — zejména výpadky elektrické energie, internetového připojení, služeb třetích stran, přírodními katastrofami, pandemií, válečnými konflikty nebo rozhodnutím orgánů veřejné moci.</p>
+    <p>Po dobu trvání vyšší moci se plnění povinností provozovatele pozastavuje. Pokud okolnosti vyšší moci trvají déle než 60 dní, má kterákoliv smluvní strana právo smlouvu vypovědět bez výpovědní doby.</p>
+  </section>
 
-    <h2>2. What is MůjAsistent</h2>
-    <p>
-      MůjAsistent is an application for managing and publishing content on social media platforms
-      (Facebook, Instagram) via the Meta Graph API. The application enables Facebook Page and
-      Instagram account administrators to create and publish posts.
-    </p>
+  <section id="zmeny">
+    <h2><span class="num">09</span> Změny podmínek</h2>
+    <p>Provozovatel si vyhrazuje právo tyto podmínky kdykoliv upravit. O změnách bude zákazník informován e-mailem nebo přes Telegram s předstihem <strong>14 dní</strong>.</p>
+    <p>Pokud zákazník se změnami nesouhlasí, má právo smlouvu vypovědět ke dni účinnosti nových podmínek. Pokračování ve využívání služby po datu účinnosti nových podmínek znamená souhlas s nimi.</p>
+  </section>
 
-    <h2>3. Data we process</h2>
-    <p>The application processes only data necessary for its operation:</p>
-    <ul>
-      <li>Access tokens for Facebook Pages and Instagram accounts (stored securely, never shared)</li>
-      <li>Facebook Page IDs and Instagram Business Account IDs</li>
-      <li>Post content (text, images) provided by the administrator for publication</li>
-      <li>Basic page metadata (name, ID) required for API functionality</li>
-    </ul>
-    <p>The application does <strong>not</strong> process personal data of fans or visitors of managed pages.</p>
+  <section id="rozhodne-pravo">
+    <h2><span class="num">10</span> Rozhodné právo a řešení sporů</h2>
+    <p>Tyto podmínky se řídí právním řádem České republiky, zejména zákonem č. 89/2012 Sb., občanským zákoníkem, ve znění pozdějších předpisů.</p>
+    <p>Veškeré spory, které vzniknou z těchto podmínek nebo v souvislosti s nimi, budou řešeny přednostně smírnou cestou. Nepodaří-li se spor vyřešit smírně do 30 dnů, bude rozhodnut věcně a místně příslušným soudem v České republice.</p>
+  </section>
 
-    <h2>4. Purpose of processing</h2>
-    <p>
-      Data is processed solely for the purpose of publishing content on Facebook Pages and Instagram
-      accounts as directed by the administrator. No data is sold, rented, or shared with third parties.
-    </p>
+  <section id="kontakt">
+    <h2><span class="num">11</span> Kontakt</h2>
+    <div class="contact-box">
+      <h3>MůjAsistent</h3>
+      <p>Jakub Žemlička<br>
+      <a href="mailto:ZemlickaJ@mujasistentai.cz">ZemlickaJ@mujasistentai.cz</a><br>
+      Telegram: @MujAsistent</p>
+    </div>
+  </section>
 
-    <h2>5. Meta platforms</h2>
-    <p>
-      The application uses the Meta Graph API in accordance with the
-      <a href="https://developers.facebook.com/policy/" target="_blank">Meta Platform Policy</a>
-      and <a href="https://www.facebook.com/privacy/policy/" target="_blank">Meta Privacy Policy</a>.
-      Data access is limited to permissions approved through the Meta App Review process.
-    </p>
+</div>
 
-    <h2>6. Security</h2>
-    <p>
-      Access tokens are stored securely and are never shared with third parties.
-      The application uses only encrypted HTTPS connections for communication with the Meta API.
-    </p>
-
-    <h2>7. Your rights (GDPR)</h2>
-    <p>You have the right to:</p>
-    <ul>
-      <li>Access your personal data</li>
-      <li>Rectification of inaccurate data</li>
-      <li>Erasure of data</li>
-      <li>Withdrawal of consent to processing</li>
-    </ul>
-    <p>To exercise these rights, contact us at: <a href="mailto:zemlicka.jakub@gmail.com">zemlicka.jakub@gmail.com</a></p>
-
-    <h2>8. Changes to this policy</h2>
-    <p>
-      We reserve the right to update this policy. You will be informed of changes by updating
-      the "Last updated" date on this page.
-    </p>
-  </div>
-
-  <script>
-    function showLang(lang) {
-      document.querySelector('.section-cs').style.display = lang === 'cs' ? 'block' : 'none';
-      document.querySelector('.section-en').style.display = lang === 'en' ? 'block' : 'none';
-    }
-    showLang('cs');
-  </script>
+<footer>
+  © 2026 MůjAsistent · Jakub Žemlička · Verze 2.0 · Platné od 1. dubna 2026<br>
+</footer>
 
 </body>
 </html>
