@@ -1,205 +1,14 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Podmínky služby — MůjAsistent</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap');
-
-  :root {
-    --ink: #1a1a2e;
-    --accent: #4f46e5;
-    --accent-light: #eef2ff;
-    --muted: #6b7280;
-    --border: #e5e7eb;
-    --bg: #fafafa;
-  }
-
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  body {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 300;
-    background: var(--bg);
-    color: var(--ink);
-    line-height: 1.8;
-    font-size: 16px;
-  }
-
-  header {
-    background: var(--ink);
-    color: white;
-    padding: 48px 0 40px;
-    text-align: center;
-  }
-
-  header .logo {
-    font-family: 'DM Serif Display', serif;
-    font-size: 28px;
-    letter-spacing: -0.5px;
-    margin-bottom: 8px;
-  }
-
-  header .logo span { color: #818cf8; }
-
-  header p {
-    font-size: 14px;
-    color: #9ca3af;
-    font-weight: 300;
-  }
-
-  .container {
-    max-width: 780px;
-    margin: 0 auto;
-    padding: 0 24px;
-  }
-
-  .meta {
-    display: flex;
-    gap: 24px;
-    padding: 24px 0;
-    border-bottom: 1px solid var(--border);
-    font-size: 13px;
-    color: var(--muted);
-    flex-wrap: wrap;
-  }
-
-  .meta span { display: flex; align-items: center; gap: 6px; }
-
-  .toc {
-    background: var(--accent-light);
-    border-left: 3px solid var(--accent);
-    padding: 24px 28px;
-    margin: 40px 0;
-    border-radius: 0 8px 8px 0;
-  }
-
-  .toc h2 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 16px;
-    margin-bottom: 12px;
-    color: var(--accent);
-  }
-
-  .toc ol {
-    padding-left: 20px;
-    font-size: 14px;
-    line-height: 2;
-  }
-
-  .toc a { color: var(--accent); text-decoration: none; }
-  .toc a:hover { text-decoration: underline; }
-
-  section {
-    padding: 40px 0;
-    border-bottom: 1px solid var(--border);
-  }
-
-  section:last-of-type { border-bottom: none; }
-
-  h2 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 24px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    color: var(--ink);
-    display: flex;
-    align-items: baseline;
-    gap: 12px;
-  }
-
-  h2 .num {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--accent);
-    background: var(--accent-light);
-    padding: 2px 8px;
-    border-radius: 4px;
-    letter-spacing: 0.5px;
-  }
-
-  h3 {
-    font-size: 15px;
-    font-weight: 500;
-    margin: 24px 0 8px;
-    color: var(--ink);
-  }
-
-  p { margin-bottom: 14px; color: #374151; }
-
-  ul, ol {
-    padding-left: 20px;
-    margin-bottom: 14px;
-    color: #374151;
-  }
-
-  li { margin-bottom: 6px; }
-
-  .highlight {
-    background: #fef9c3;
-    border: 1px solid #fde68a;
-    padding: 16px 20px;
-    border-radius: 8px;
-    margin: 20px 0;
-    font-size: 14px;
-  }
-
-  .highlight strong { color: #92400e; }
-
-  .highlight-blue {
-    background: var(--accent-light);
-    border: 1px solid #c7d2fe;
-    padding: 16px 20px;
-    border-radius: 8px;
-    margin: 20px 0;
-    font-size: 14px;
-  }
-
-  .highlight-blue strong { color: var(--accent); }
-
-  .highlight-green {
-    background: #f0fdf4;
-    border: 1px solid #bbf7d0;
-    padding: 16px 20px;
-    border-radius: 8px;
-    margin: 20px 0;
-    font-size: 14px;
-  }
-
-  .highlight-green strong { color: #166534; }
-
-  .contact-box {
-    background: var(--ink);
-    color: white;
-    padding: 32px;
-    border-radius: 12px;
-    margin-top: 40px;
-    text-align: center;
-  }
-
-  .contact-box h3 { color: white; margin: 0 0 8px; font-size: 18px; }
-  .contact-box p { color: #9ca3af; margin: 0; font-size: 14px; }
-  .contact-box a { color: #818cf8; }
-
-  footer {
-    text-align: center;
-    padding: 32px;
-    font-size: 13px;
-    color: var(--muted);
-    border-top: 1px solid var(--border);
-    margin-top: 40px;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ZDROJ PRAVDY pro website/podminky.html v repu mujaistent-docs. build_pages.py z teto
+       stranky prebira obsah tela dokumentu. Obsahove zmeny delej TADY a pak spust
+       build + deploy. NEeditovat build artefakt primo. -->
+  <title>Podmínky služby — MůjAsistent</title>
 </head>
 <body>
-
-<header>
-  <div class="logo">Můj<span>Asistent</span></div>
-  <p>AI asistent pro váš byznys</p>
-</header>
-
 <div class="container">
 
   <div class="meta">
@@ -337,7 +146,7 @@
   <section id="cena">
     <h2><span class="num">05</span> Cena, fakturace a limity</h2>
 
-    <p>Ceny jednotlivých tarifů jsou uvedeny v aktuálním ceníku dostupném na vyžádání u provozovatele. Všechny ceny jsou uvedeny bez DPH, není-li uvedeno jinak.</p>
+    <p>Ceny jednotlivých tarifů jsou uvedeny v aktuálním ceníku dostupném na vyžádání u provozovatele. Uvedené ceny jsou konečné — provozovatel není plátcem DPH.</p>
 
     <h3>Podmínky fakturace</h3>
     <ul>
@@ -346,7 +155,7 @@
     </ul>
 
     <h3>Limity tarifu a překročení (fair use)</h3>
-    <p>Každý tarif zahrnuje stanovený rozsah služeb (počet příspěvků, počet zpráv agentu a další dle aktuálního ceníku). Konkrétní limity jsou uvedeny v ceníku příslušného tarifu.</p>
+    <p>Každý tarif zahrnuje stanovený rozsah služeb (počet příspěvků, počet zpráv agentu a další dle aktuálního ceníku). Konkrétní limity jsou uvedeny v ceníku příslušného tarifu. Příspěvek publikovaný současně na více sociálních sítí (např. tentýž obsah na Instagram i Facebook) se počítá jako <strong>jeden příspěvek</strong>.</p>
     <p>Při dosažení limitu tarifu provozovatel zákazníka informuje a nabídne přechod na vyšší tarif. Služba nebude okamžitě přerušena — zákazník má možnost reagovat na nabídku. Pokud zákazník upgrade odmítne nebo nereaguje, agent přestane přijímat nové příspěvky do začátku dalšího fakturačního období.</p>
 
     <div class="highlight-green">
@@ -363,7 +172,7 @@
   <!-- ═══════════════════════════════════════════════ -->
   <section id="zkusebni">
     <h2><span class="num">06</span> Zkušební období</h2>
-    <p>Provozovatel může zákazníkovi nabídnout bezplatné zkušební období v délce až <strong>14 dní</strong>. Během zkušebního období má zákazník přístup ke službě v rozsahu tarifu START, není-li dohodnuto jinak.</p>
+    <p>Provozovatel může zákazníkovi nabídnout bezplatné zkušební období v délce až <strong>14 dní</strong>. Během zkušebního období má zákazník přístup ke službě v rozsahu tarifu Start, není-li dohodnuto jinak.</p>
 
     <h3>Co se stane po skončení zkušebního období</h3>
     <p>Služba <strong>není automaticky převedena</strong> na placený tarif. Po uplynutí zkušebního období provozovatel zákazníka kontaktuje s nabídkou placených tarifů. Pokud zákazník do 7 dnů po skončení zkušebního období nepotvrdí přechod na placený tarif, agent přestane být aktivní a přístupy k sociálním sítím budou odstraněny.</p>
@@ -408,7 +217,7 @@
     <p>Provozovatel zpracovává osobní údaje zákazníka jako <strong>správce</strong> ve smyslu Nařízení Evropského parlamentu a Rady (EU) 2016/679 (dále jen „GDPR").</p>
 
     <div class="highlight-blue">
-      <strong>📋 Zpracování údajů koncových zákazníků:</strong> Pokud zákazník prostřednictvím služby zpracovává osobní údaje svých vlastních koncových zákazníků (např. komunikace na sociálních sítích), vystupuje provozovatel ve vztahu k těmto údajům jako <strong>zpracovatel</strong>. V&nbsp;takovém případě uzavřou strany samostatnou smlouvu o zpracování osobních údajů (DPA) dle čl. 28 GDPR.
+      <strong>📋 Zpracování údajů koncových zákazníků:</strong> Pokud zákazník prostřednictvím služby zpracovává osobní údaje svých vlastních koncových zákazníků (např. komunikace na sociálních sítích), vystupuje provozovatel ve vztahu k těmto údajům jako <strong>zpracovatel</strong>. V&nbsp;takovém případě se vztah řídí samostatnou <a href="dpa.html">smlouvou o zpracování osobních údajů (DPA)</a> dle čl. 28 GDPR, která je nedílnou součástí smluvní dokumentace.
     </div>
 
     <h3>Právní základ zpracování</h3>
@@ -521,10 +330,5 @@
   </section>
 
 </div>
-
-<footer>
-  © 2026 MůjAsistent · Jakub Žemlička · Verze 4.0 · Platné od 1. dubna 2026<br>
-</footer>
-
 </body>
 </html>
